@@ -3,6 +3,7 @@ Instead of a plugin, `note.vim` is a syntax highlighting file for general plain 
 ## 1. Installation
 ### Setp 1
 **Linux**: put the file into the `~/.vim/syntax/` directory.
+
 **Windows**: put the file into the `...\Vim\vimfiles\syntax\` directory. For example mine is `E:\ProgramFiles\Vim\vimfiles\syntax\`.
 ### Setp 2
 Put the following line into your `vimrc` file
