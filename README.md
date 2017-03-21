@@ -39,7 +39,8 @@ This is for the convenience of reading and editing, since it will be annoying th
 ## 2. Usage
 First of all, create a `.note` file, for example `test.note`. Then set it to not read-only by `:setl noro` or call the `ToggleReadOnly()` function provided above before typing in any content. Currently there are **2** highlighting styles - **foreground** and **background**, and **5** colors for each - **blue**, **green**, **orange**, **purple** and **red**. Additionally, **black** is available for foreground highlight as it was just for fun. What's more, `#` (hash) is used for commenting just like in that in Python and `*` (asterisk) will be in a different color if it is the start of a line so that you can make a block with it. The following screenshots will show examples of the usage.
 
-![Usage](https://github.com/Neur1n/note.vim/blob/master/screenshots/note_usage.PNG "Inputs")
-![Result](https://github.com/Neur1n/note.vim/blob/master/screenshots/note_result.PNG "Results")
+|Inputs         |Results        |
+|:-------------:|:-------------:|
+|![Inputs](https://github.com/Neur1n/note.vim/blob/master/screenshots/note_usage.PNG)|![Results](https://github.com/Neur1n/note.vim/blob/master/screenshots/note_result.PNG "Results")|
 
 ![More Examples](https://github.com/Neur1n/note.vim/blob/master/screenshots/note_examples.PNG "More Examples")
