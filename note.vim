@@ -23,7 +23,6 @@ hi noteComment ctermfg=242
 "=============================================================================== delimit
 syn match noteDelimite_1 /\[[A-Za-z0-9]\s/ conceal contained
 syn match noteDelimite_2 /\]/ conceal contained
-"syn match noteDelimite /\[[A-Za-z0-9]\]/ conceal contained
 
 "=============================================================================== Capital Tags
 " {dark text, blue box, bold}
@@ -38,7 +37,6 @@ hi noteTagCapG ctermfg=235 ctermbg=112 cterm=bold
 
 " {dark text, orange box, bold}
 syn match noteTagCapO /\[O.\{-}\]/ contains=noteDelimite_1,noteDelimite_2 containedin=noteComment
-"syn match noteTagCapO /\[O\].*\s/me=e-1 contains=noteDelimite
 hi noteTagCapO guifg=#262626 guibg=#FFAF00 gui=bold
 hi noteTagCapO ctermfg=235 ctermbg=214 cterm=bold
 
@@ -72,7 +70,7 @@ hi noteTagSmlk ctermfg=0
 syn match noteTagSmlo /\[o.\{-}\]/ contains=noteDelimite_1,noteDelimite_2 containedin=noteComment
 hi noteTagSmlo guifg=#FFAF00
 hi noteTagSmlo ctermfg=214
-"
+
 " {purple text}
 syn match noteTagSmlp /\[p.\{-}\]/ contains=noteDelimite_1,noteDelimite_2 containedin=noteComment
 hi noteTagSmlp guifg=#AF00FF
