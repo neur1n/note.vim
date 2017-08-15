@@ -3,17 +3,17 @@
 means it works with all the files with a `.note` extension just like `cpp.vim`
 for `.cpp` files.
 ## 1. Installation
-### Setp 1
+### Step 1
 **Linux**: put the file into the `~/.vim/syntax/` directory.
 
 **Windows**: put the file into the `...\Vim\vimfiles\syntax\` directory. For
 example mine is `E:\ProgramFiles\Vim\vimfiles\syntax\`.
-### Setp 2
+### Step 2
 Put the following line into your `vimrc` file
 ```vim
 au BufRead,BufNewFile *.note setf note
 ```
-### Setp 3 (optional)
+### Step 3 (optional)
 By default, all `.note` files are set to read-only since this syntax uses the
 `conceal` feature in Vim. Relevant configurations can be seen below or in the
 file:
@@ -60,3 +60,13 @@ the usage.
 |Inputs         |Results        |More Examples  |
 |:-------------:|:-------------:|:-------------:|
 |![Inputs](https://github.com/Neur1n/note.vim/blob/master/screenshots/note_usage.PNG)|![Results](https://github.com/Neur1n/note.vim/blob/master/screenshots/note_result.PNG)|![More Examples](https://github.com/Neur1n/note.vim/blob/master/screenshots/note_examples.PNG)|
+## 3. Known Bugs
+(1) Conflicts with [luochen1990/rainbow](https://github.com/luochen1990/rainbow),
+and I have not tested with the other rainbow parentheses plugins yet. If you
+don't need this plugin in your `.note` file, you can disable it on Vim startup
+by putting the following in the `_vimrc` file:
+```vim
+let g:rainbow_active = 0
+```
+Then syntax highlightings in `.note` file will be fine until rainbow
+parentheses is turned on manually.
